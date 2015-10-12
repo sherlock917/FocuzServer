@@ -1,0 +1,23 @@
+{
+  "name": "focuz_server",
+  "version": "1.0.0",
+  "description": "a server for the Focuz app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sherlock917/FocuzServer.git"
+  },
+  "author": "S.L. Zhong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sherlock917/FocuzServer/issues"
+  },
+  "homepage": "https://github.com/sherlock917/FocuzServer#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "mongoose": "^4.1.10"
+  }
+}
