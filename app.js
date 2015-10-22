@@ -3,6 +3,7 @@ var express = require('express')
   , mongoose = require('mongoose')
   , pageController = require('./controllers/page_controller')
   , userController = require('./controllers/user_controller')
+  , recordController = require('./controllers/record_controller')
   , app = express()
 
 var port = 3210
@@ -19,6 +20,9 @@ app.get('/', pageController.index)
 
 app.post('/signin', userController.signin)
 app.post('/signup', userController.signup)
+
+app.post('/save', recordController.save)
+app.get('/list/:userId', recordController.list)
 
 app.listen(port, function () {
   console.log('server listening on port ' + port)
